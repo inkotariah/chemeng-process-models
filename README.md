@@ -25,7 +25,7 @@ Qout = c√h
 - Effects such as leakage and evaporation are neglected.
   
 ## Numerical Method
-The ordinary differential equation is solved numerically using SciPy’s solve_ivp, and the solution is evaluated at uniformly spaced time points for plotting.
+The ordinary differential equation is solved numerically using SciPy’s solve_ivp function, with the solution is evaluated at uniformly spaced time points for plotting.
 
 ## Results and Visualization
 The model outputs the liquid level as a function of time, which is plotted to observe the transient and steady-state behavior of the tank system.
@@ -38,4 +38,4 @@ The model outputs the liquid level as a function of time, which is plotted to ob
   
 ## References
 - [1] Aleksandar Haber PhD, “Derivation of Dynamics of Tank Filled with Fluid and Python Simulation - Control and Process Dynamic,” YouTube, May 10, 2024. https://www.youtube.com/watch?v=TBkTAmOu9Io (accessed Dec. 24, 2025).
-- [2]M. Pathak, “A Practical Guide to scipy.integrate.solve_ivp - AskPython,” AskPython, Jul. 2025. https://www.askpython.com/python-modules/scipy/scipy-integrate-solve_ivp (accessed Dec. 24, 2025).
+- [2] M. Pathak, “A Practical Guide to scipy.integrate.solve_ivp - AskPython,” AskPython, Jul. 2025. https://www.askpython.com/python-modules/scipy/scipy-integrate-solve_ivp (accessed Dec. 24, 2025).
