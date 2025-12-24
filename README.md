@@ -10,8 +10,11 @@ This project focuses on dynamic modeling of a liquid tank system using Python. T
 
 ## Model Description
 A dynamic mass balance is applied to a liquid tank system. The governing equation for the liquid level is:
+
 dh/dt = (Qin − Qout) / A
+
 where the outlet flow rate is modeled as:
+
 Qout = c√h
 
 ## Modelling Assumptions
