@@ -23,11 +23,16 @@ soln = solve_ivp(tank_level, Time_span, h0, dense_output=True) #Numerical comput
 t = np.linspace(Time_span[0], Time_span[1], num_points)
 h = soln.sol(t)[0]
 
+#Creating a steadystate option
+h_ss = (Qin/c)**2
+
 #Plotting
 plt.figure()
 plt.plot(t,h)
 plt.ylabel("Tank Level (m)")
 plt.xlabel("Time (s)")
+plt.axhline(h_ss, linestyle = '--', color='red', label = 'Steady State')
 plt.title("Dynamic Tank Level Response")
+plt.legend()
 plt.grid()
 plt.show()
