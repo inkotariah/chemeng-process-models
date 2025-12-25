@@ -33,7 +33,7 @@ The numerical simulation converges to this steady-state value, confirming the va
 Base dynamic tank level model with analytical steady-state validation.
 
 **Version 2:**  
-A disturbance is applied to the inlet flow rate at a specified time, and the resulting transient response and new steady state are analyzed.
+A step disturbance is applied to the inlet flow rate at a specified time, and the resulting transient response and new steady state are analyzed.
   
 ## Numerical Method
 The ordinary differential equation is solved numerically using SciPy’s solve_ivp function, with the solution evaluated at uniformly spaced time points for plotting.
