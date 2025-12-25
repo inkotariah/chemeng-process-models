@@ -23,6 +23,10 @@ Qout = c√h
 - The inlet flow rate is constant in time.
 - The outlet flow depends only on the height of liquid above the outlet.
 - Effects such as leakage and evaporation are neglected.
+
+## Steady State
+At steady state, the liquid level remains constant and the inlet and outlet flow rates are equal. By setting the time derivative of the tank level to zero, an analytical expression for the steady-state height is obtained.
+The numerical simulation converges to this steady-state value, confirming the validity of the dynamic model.
   
 ## Numerical Method
 The ordinary differential equation is solved numerically using SciPy’s solve_ivp function, with the solution is evaluated at uniformly spaced time points for plotting.
