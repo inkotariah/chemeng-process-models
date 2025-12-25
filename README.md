@@ -27,6 +27,13 @@ Qout = c√h
 ## Steady State Analysis
 At steady state, the liquid level remains constant and the inlet and outlet flow rates are equal. By setting the time derivative of the tank level to zero, an analytical expression for the steady-state height is obtained.
 The numerical simulation converges to this steady-state value, confirming the validity of the dynamic model.
+
+## Model Versions
+**Version 1 (V1):**  
+Base dynamic tank level model with analytical steady-state validation.
+
+**Version 2 (V2):**  
+A disturbance is applied to the inlet flow rate at a specified time, and the resulting transient response and new steady state are analyzed.
   
 ## Numerical Method
 The ordinary differential equation is solved numerically using SciPy’s solve_ivp function, with the solution evaluated at uniformly spaced time points for plotting.
