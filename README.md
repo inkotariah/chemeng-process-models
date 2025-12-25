@@ -29,10 +29,10 @@ At steady state, the liquid level remains constant and the inlet and outlet flow
 The numerical simulation converges to this steady-state value, confirming the validity of the dynamic model.
 
 ## Model Versions
-**Version 1 (V1):**  
+**Version 1:**  
 Base dynamic tank level model with analytical steady-state validation.
 
-**Version 2 (V2):**  
+**Version 2:**  
 A disturbance is applied to the inlet flow rate at a specified time, and the resulting transient response and new steady state are analyzed.
   
 ## Numerical Method
