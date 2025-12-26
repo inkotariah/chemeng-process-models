@@ -16,7 +16,7 @@ dh/dt = (Qin − Qout) / A
 where h = liquid height [m]; Qin = volumetric inlet flow rate [m³/s]; Qout = volumetric outlet flow rate [m³/s]; A = constant cross-sectional area of the tank [m²]
 
 The outlet flow is modeled as:
-Q_out = c * √h, 
+Qout = c * √h, 
 where c is the valve coefficient.
 
 ## Modelling Assumptions
@@ -37,11 +37,11 @@ Base dynamic tank level model with analytical steady-state validation.
 **Version 2 (tank_level_v2_inlet_disturbance):**  
 A step disturbance is applied to the inlet flow rate at a specified time, and the resulting transient response and new steady state are analyzed.
 
-**Version 3 (tank_level_v3_tank_sensitivity):**  
+**Version 3 (tank_level_v3_valve_sensitivity):**  
 Sensitivity analysis examining how variations in the outlet valve coefficient affect the steady-state tank level.
   
 ## Numerical Method
-The ordinary differential equation is solved numerically using SciPy’s solve_ivp function, with the solution evaluated at uniformly spaced time points for plotting.
+The ordinary differential equation is solved numerically using SciPy’s solve_ivp function, with the solution evaluated at uniformly spaced time points for visualization.
 
 ## Results and Visualization
 The model outputs the liquid level as a function of time, which is plotted to observe the transient and steady-state behavior of the tank system.
