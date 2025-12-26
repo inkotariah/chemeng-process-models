@@ -1,7 +1,7 @@
 # Tank Level Dynamics
 
 ## Overview
-This project focuses on dynamic modeling of a liquid tank system using Python. The goal is to translate physical mass balances into differential equations and solve them numerically.
+This project focuses on dynamic modeling of a liquid tank system using Python. The goal is to translate physical mass balances into differential equations, solve them numerically, and analyze system behavior relevant to process control and design.
 
 ## Objectives
 - Develop a dynamic model for tank level behavior
@@ -12,10 +12,14 @@ This project focuses on dynamic modeling of a liquid tank system using Python. T
 A dynamic mass balance is applied to a liquid tank system. The governing equation for the liquid level is:
 
 dh/dt = (Qin − Qout) / A
+where h = liquid height [m]
+      Q_in = volumetric inlet flow rate [m³/s]
+      Q_out = volumetric outlet flow rate [m³/s]
+      A = constant cross-sectional area of the tank [m²]
 
-where the outlet flow rate is modeled as:
-
-Qout = c√h
+The outlet flow is modeled as:
+Q_out = c * √h, 
+where c is the valve coefficient.
 
 ## Modelling Assumptions
 - The tank is perfectly mixed and lumped.
@@ -49,6 +53,11 @@ The model outputs the liquid level as a function of time, which is plotted to ob
 - NumPy
 - SciPy
 - Matplotlib
+
+## Key Insights
+- The tank level dynamically converges to an analytically derived steady state.
+- Step changes in inlet flow cause transient behavior before reaching a new steady state.
+- Restricting the outlet valve increases the steady-state liquid level, highlighting the impact of design parameters on process behavior.
   
 ## References
 - [1] Aleksandar Haber PhD, “Derivation of Dynamics of Tank Filled with Fluid and Python Simulation - Control and Process Dynamic,” YouTube, May 10, 2024. https://www.youtube.com/watch?v=TBkTAmOu9Io (accessed Dec. 24, 2025).
