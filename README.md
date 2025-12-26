@@ -35,7 +35,7 @@ Base dynamic tank level model with analytical steady-state validation.
 **Version 2:**  
 A step disturbance is applied to the inlet flow rate at a specified time, and the resulting transient response and new steady state are analyzed.
 
-**Version 3:**
+**Version 3:**  
 Sensitivity analysis examining how variations in the outlet valve coefficient affect the steady-state tank level.
   
 ## Numerical Method
