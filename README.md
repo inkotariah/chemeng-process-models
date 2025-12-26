@@ -13,10 +13,7 @@ A dynamic mass balance is applied to a liquid tank system. The governing equatio
 
 dh/dt = (Qin − Qout) / A
 
-where h = liquid height [m]   
-         Q_in = volumetric inlet flow rate [m³/s]    
-         Q_out = volumetric outlet flow rate [m³/s]    
-         A = constant cross-sectional area of the tank [m²]
+where h = liquid height [m]; Qin = volumetric inlet flow rate [m³/s]; Qout = volumetric outlet flow rate [m³/s]; A = constant cross-sectional area of the tank [m²]
 
 The outlet flow is modeled as:
 Q_out = c * √h, 
@@ -34,13 +31,13 @@ At steady state, the liquid level remains constant and the inlet and outlet flow
 The numerical simulation converges to this steady-state value, confirming the validity of the dynamic model.
 
 ## Model Versions
-**Version 1:**  
+**Version 1 (tank_level_v1_base_model):**  
 Base dynamic tank level model with analytical steady-state validation.
 
-**Version 2:**  
+**Version 2 (tank_level_v2_inlet_disturbance):**  
 A step disturbance is applied to the inlet flow rate at a specified time, and the resulting transient response and new steady state are analyzed.
 
-**Version 3:**  
+**Version 3 (tank_level_v3_tank_sensitivity):**  
 Sensitivity analysis examining how variations in the outlet valve coefficient affect the steady-state tank level.
   
 ## Numerical Method
