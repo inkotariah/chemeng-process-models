@@ -13,12 +13,9 @@ A dynamic mass balance is applied to a liquid tank system. The governing equatio
 
 dh/dt = (Qin − Qout) / A
 
-where h = liquid height [m]
-
-      Q_in = volumetric inlet flow rate [m³/s]
-      
-      Q_out = volumetric outlet flow rate [m³/s]
-      
+where h = liquid height [m]   
+      Q_in = volumetric inlet flow rate [m³/s]    
+      Q_out = volumetric outlet flow rate [m³/s]    
       A = constant cross-sectional area of the tank [m²]
 
 The outlet flow is modeled as:
